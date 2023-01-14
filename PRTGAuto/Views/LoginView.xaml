@@ -1,0 +1,37 @@
+﻿<Page x:Class="PRTGAuto.Views.LoginView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRTGAuto.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:vm="clr-namespace:PRTGAuto.ViewModels"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal" 
+      TextOptions.TextRenderingMode="Auto"        
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="LoginView">
+    <Page.DataContext>
+        <vm:LoginViewModel></vm:LoginViewModel>
+    </Page.DataContext>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="White">
+        <Image Source="/Images/Group 1.png" HorizontalAlignment="Center" Width="250" Height="84"/>
+        <Grid Margin="10" Background="#FFF9F9F9" Height="300" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Label Margin="0,10,0,0" Content="Введите URL адрес PRTG"></Label>
+                <TextBox  Text="{Binding Url,ValidatesOnExceptions=True}" Margin="5"  materialDesign:HintAssist.Hint="Адрес"
+                             materialDesign:HintAssist.FloatingScale="0.7"
+                                       Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <Label Margin="0,10,0,0" Content="Введите Имя пользователя PRTG"></Label>
+                <TextBox Text="{Binding Username}" Margin="5"       materialDesign:HintAssist.Hint="Логин"
+                             materialDesign:HintAssist.FloatingScale="0.7"
+                                       Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <Label Margin="0,10,0,0" Content="Введите пароль"></Label>
+                <PasswordBox x:Name="passwordBox" Margin="5 "  materialDesign:HintAssist.Hint="Пароль"></PasswordBox>
+            </StackPanel>
+            <Button Command="{Binding LoginCommand}" Content="Войти" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="30" Margin="0,240,0,0" Background="#FF01255B"></Button>
+        </Grid>
+    </StackPanel>
+</Page>

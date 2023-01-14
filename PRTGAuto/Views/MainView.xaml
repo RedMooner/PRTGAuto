@@ -1,0 +1,77 @@
+﻿<Page x:Class="PRTGAuto.Views.MainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRTGAuto.Views"
+      mc:Ignorable="d" 
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:vm="clr-namespace:PRTGAuto.ViewModels"
+      d:DesignHeight="800" d:DesignWidth="1100"
+      Title="MainView">
+    <Page.DataContext>
+        <vm:MainViewModel></vm:MainViewModel>
+    </Page.DataContext>
+    <Grid Background="White">
+        <materialDesign:Card  UniformCornerRadius="15" Margin="-2,0,2,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32*"/>
+                    <RowDefinition Height="383*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="15*" />
+                </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="materialDesign:PackIcon">
+                        <Setter Property="Width" Value="30"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid Grid.Column="0"   Grid.RowSpan="2">
+                    <ListView Margin="0 15">
+                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
+                            <Button Command="{Binding ShowObjectView}" HorizontalAlignment="Left"
+                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Height="50" Width="100">
+                                <StackPanel Margin="-5">
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Server" Width="63"/>
+                                    <TextBlock Text="Устройства" HorizontalAlignment="Center" Width="76"/>
+                                </StackPanel>
+                            </Button>
+                        </ListViewItem>
+                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
+                            <Button Command="{Binding ShowSensorsView}"  HorizontalAlignment="Left" 
+                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Height="50" Width="100">
+                                <StackPanel Margin="-5">
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ProximitySensor" Width="63"/>
+                                    <TextBlock Text="Сенсоры" HorizontalAlignment="Center" Width="62"/>
+                                </StackPanel>
+                            </Button>
+                        </ListViewItem>
+
+                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
+                            <Button  HorizontalAlignment="Left" 
+                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" Height="50" Width="100">
+                                <StackPanel Margin="-5">
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ExitToApp" Width="63"/>
+                                    <TextBlock Text="Выйти" Width="43"/>
+                                </StackPanel>
+                            </Button>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Column="1" Background="#F6F5F8" Grid.RowSpan="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="386*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Visibility="Hidden" Grid.Row="0">
+                        <Label FontSize="20" FontWeight="SemiBold" Margin="888,0,0,0" Content="{Binding Title}" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+                    </Grid>
+                    <Frame x:Name="frame" NavigationUIVisibility="Hidden" Grid.RowSpan="2"/>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Page>

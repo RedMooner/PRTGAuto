@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="PRTGAuto.Views.ObjectViews.Items.DeviceControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PRTGAuto.Views.ObjectViews.Items"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+           >
+    <Grid>
+        <Rectangle  Width="500" VerticalAlignment="Center" HorizontalAlignment="Left" Height="88" Margin="20,0,0,0" Fill="White" RadiusX="10" RadiusY="15" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.45"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.589"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Grid  VerticalAlignment="Top" HorizontalAlignment="Left" Height="88" Margin="20,20,20,20">
+            <materialDesign:PackIcon Kind="Devices" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center" Height="88" Margin="10,0,0,0"/>
+            <Grid>
+                <Grid  Margin="90,0,-420,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock   Text="{Binding ShortName}" ToolTip="{Binding  CurrentDevice.Name}" FontSize="25" FontWeight="DemiBold" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal" VerticalAlignment="Bottom">
+                        <materialDesign:PackIcon Kind="Identifier" Width="15"  Margin="10,0,5,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="15" />
+                        <TextBlock  Text="{Binding StringFormat=Id: {0},Path=CurrentDevice.Id}"></TextBlock>
+                        <materialDesign:PackIcon Foreground="red" Kind="Error" Width="15" Margin="10,0,5,0"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="15" />
+                        <TextBlock   Text="{Binding StringFormat=Датчиков с ошбиками: {0},Path=CurrentDevice.DownSensors}"></TextBlock>
+                    </StackPanel>
+                    <Button Command="{Binding ExportDataToExcel}" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Height="22" Width="48" Content="{materialDesign:PackIcon Kind=MicrosoftExcel}" ToolTip="Экспортировать данные сенсоров"></Button>
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

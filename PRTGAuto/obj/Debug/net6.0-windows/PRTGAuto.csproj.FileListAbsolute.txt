@@ -1,0 +1,108 @@
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.exe
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.deps.json
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.runtimeconfig.json
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.pdb
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_MarkupCompile.cache
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_MarkupCompile.lref
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.g.resources
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.AssemblyInfo.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\refint\PRTGAuto.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.pdb
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.genruntimeconfig.cache
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\ref\PRTGAuto.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Prism.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PrtgAPI.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\App.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\LoginView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.CopyComplete
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\MainObjectView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\MainObjectView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\SearchObjectsView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\SearchObjectsView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\Items\DeviceControlView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\Items\DeviceControlView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Aspose.Cells.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_Content.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\MainSensorsView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\MainSensorsView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\AddSensorsViews\AddOneSensorView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\AddSensorsViews\AddOneSensorView.baml
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ExportControlView.g.cs
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ExportControlView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.exe
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.deps.json
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.runtimeconfig.json
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PRTGAuto.pdb
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Aspose.Cells.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\Prism.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\PrtgAPI.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.AssemblyReference.cache
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ExportControlView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\Items\DeviceControlView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\MainObjectView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\SearchObjectsView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\AddSensorsViews\AddOneSensorView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\MainSensorsView.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_Content.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_MarkupCompile.cache
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto_MarkupCompile.lref
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\App.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ExportControlView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\LoginView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\Items\DeviceControlView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\MainObjectView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\ObjectViews\SearchObjectsView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\AddSensorsViews\AddOneSensorView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\Views\SensorsViews\MainSensorsView.baml
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.g.resources
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.AssemblyInfoInputs.cache
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.AssemblyInfo.cs
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.CoreCompileInputs.cache
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.csproj.CopyComplete
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\refint\PRTGAuto.dll
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.pdb
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\PRTGAuto.genruntimeconfig.cache
+C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\ref\PRTGAuto.dll
