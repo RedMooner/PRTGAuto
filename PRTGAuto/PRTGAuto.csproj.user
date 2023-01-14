@@ -10,6 +10,9 @@
     <Compile Update="Views\ExportControlView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ExportSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\LoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\ExportControlView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ExportSettings.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\LoginView.xaml">

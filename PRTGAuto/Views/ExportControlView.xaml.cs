@@ -101,5 +101,11 @@ namespace PRTGAuto.Views
             Models.ExportQueue.QueueController.Queues.Remove(Queue);
             Models.ExportQueue.QueueController.UpdateUI();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var Export = new ExportSettings(Queue);
+            Export.ShowDialog();
+        }
     }
 }

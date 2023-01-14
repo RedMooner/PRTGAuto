@@ -1,0 +1,85 @@
+﻿<Window x:Class="PRTGAuto.Views.ExportSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRTGAuto.Views"
+        mc:Ignorable="d"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Настройки экспортирования" Height="550" Width="350" MinHeight="500" MinWidth="350" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <TextBlock Margin="10" FontSize="20" FontWeight="DemiBold" Text="Настройки экспортирования"></TextBlock>
+            <Separator></Separator>
+     
+            <StackPanel Margin="20">
+                <materialDesign:Card>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Основные" Margin="0,0,0,10"></TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Identifier"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="ID сенесора "></TextBlock>
+                            <ToggleButton x:Name="SensorIdSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"/>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="ProximitySensor"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Наименование сенсора "></TextBlock>
+                            <ToggleButton Name="SensorNameSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Devices"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Наименование устройства "></TextBlock>
+                            <ToggleButton x:Name="DeviceNameSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Group"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Наименование группы "></TextBlock>
+                            <ToggleButton x:Name="GroupNameSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Server"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Наименование зонда "></TextBlock>
+                            <ToggleButton x:Name="ProbeNameSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                    </StackPanel>
+                </materialDesign:Card>
+                <materialDesign:Card Margin="0,20,0,0">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Прочее" Margin="0,0,0,10"></TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="ListStatus"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Статус устройства "></TextBlock>
+                            <ToggleButton x:Name="DeviceStatusSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="CarSpeedLimiter"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Минимальный порог ошибки "></TextBlock>
+                            <ToggleButton x:Name="MinErrorSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Warning"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Мин-ый порог предупреждения"></TextBlock>
+                            <ToggleButton  x:Name="MinWarningSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Margin="0,0,10,0" Kind="Valve"></materialDesign:PackIcon>
+                            <TextBlock Width="200" Text="Последнее значение"></TextBlock>
+                            <ToggleButton  x:Name="LastValueSetting" Style="{DynamicResource MaterialDesignSwitchDarkToggleButton}"></ToggleButton>
+                        </StackPanel>
+                        <Separator Margin="5"></Separator>
+                    </StackPanel>
+                </materialDesign:Card>
+                <Button Margin="10" Content="Сохранить" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+      
+    </Grid>
+</Window>

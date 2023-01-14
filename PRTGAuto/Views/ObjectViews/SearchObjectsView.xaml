@@ -15,10 +15,10 @@
     </Page.DataContext>
     <Grid Background="#F6F5F8">
 
-        <Grid Visibility="{Binding LoadingScreenVisibility}"   Background="#B3000000" Panel.ZIndex="1">
-            <TextBlock Foreground="White" Text="Идет экспорт пожалуйста подождите" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" Margin="0,251,0,0" ></TextBlock>
-            <TextBlock x:Name="status" Foreground="White" Text="Идет экспорт пожалуйста подождите" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,309,0,0" ></TextBlock>
-            <materialDesign:PackIcon Kind="Export" Foreground="White" Margin="0,125,0,0" HorizontalAlignment="Center" Height="121" Width="170"/>
+        <Grid Visibility="{Binding LoadingScreenVisibility}"    Background="#B3000000" Panel.ZIndex="1">
+            <TextBlock Foreground="White" Text="Идет загрузка, пожалуйста подождите" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" Margin="0,211,0,0" ></TextBlock>
+            <TextBlock x:Name="status" Foreground="White" Text="Идет экспорт пожалуйста подождите" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,284,0,0" RenderTransformOrigin="0.502,-0.186" ></TextBlock>
+            <materialDesign:PackIcon Kind="Export" Foreground="White" Margin="0,73,0,0" HorizontalAlignment="Center" Height="121" Width="170"/>
         </Grid>
 
         <Grid VerticalAlignment="Top" Height="50">
@@ -26,7 +26,7 @@
                 <materialDesign:PackIcon Kind="Search" VerticalAlignment="Center" Width="27"  Foreground="#29A3EC" Height="24" />
                 <TextBlock VerticalAlignment="Center" FontWeight="SemiBold" FontSize="25" Text="Поиск"  />
             </StackPanel>
-            <materialDesign:Card  HorizontalAlignment="Right"  Width="100">
+            <materialDesign:Card Margin="10" HorizontalAlignment="Right"  Width="100">
                 <materialDesign:PopupBox HorizontalAlignment="Center">
                     <materialDesign:PopupBox.ToggleContent>
                         <StackPanel Orientation="Horizontal">

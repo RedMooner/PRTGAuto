@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\obj\Debug\net6.0-windows\
 PRTGAuto
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\motyr\OneDrive\Рабочий стол\PRTGAuto\PRTGAuto\App.xaml
-9-1473644244
+C:\Users\Alex\source\repos\PRTGAuto\PRTGAuto\App.xaml
+10258804699
 11762862393
-20-1446332019
-202537523924
-Views\ExportControlView.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\ObjectViews\Items\DeviceControlView.xaml;Views\ObjectViews\MainObjectView.xaml;Views\ObjectViews\SearchObjectsView.xaml;Views\SensorsViews\AddSensorsViews\AddOneSensorView.xaml;Views\SensorsViews\MainSensorsView.xaml;
+21898683082
+2021201934315
+Views\ExportControlView.xaml;Views\ExportSettings.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\ObjectViews\Items\DeviceControlView.xaml;Views\ObjectViews\MainObjectView.xaml;Views\ObjectViews\SearchObjectsView.xaml;Views\SensorsViews\AddSensorsViews\AddOneSensorView.xaml;Views\SensorsViews\MainSensorsView.xaml;
 
 False
 

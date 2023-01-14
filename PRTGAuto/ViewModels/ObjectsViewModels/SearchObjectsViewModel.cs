@@ -66,8 +66,22 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
             set
             {
                 _selectedProbe = value;
-                Groups = new System.Collections.ObjectModel.ObservableCollection<Group>(_model.client.QueryGroups(x => x.Probe == value.Name));
+                LoadGroups();
             }
+        }
+        Thread t;
+
+        private void LoadGroups()
+        {
+            LoadingScreenVisibility = Visibility.Visible;
+            t = new Thread(new ThreadStart(RunTheradLoadGroups));
+            t.IsBackground = true;
+            t.Start();
+        }
+        private void RunTheradLoadGroups()
+        {
+            Groups = new System.Collections.ObjectModel.ObservableCollection<Group>(_model.client.QueryGroups(x => x.Probe == _selectedProbe.Name));
+            LoadingScreenVisibility = Visibility.Hidden;
         }
         public Group SelectedGroup
         {
@@ -140,7 +154,76 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
         public DelegateCommand<object> SearchCommand { get; }
         public DelegateCommand<object> ExportCommand { get; }
         public DelegateCommand<object> ExportSensorsCommand { get; }
+        private void Search()
+        {
+            LoadingScreenVisibility = Visibility.Visible;
+            t = new Thread(new ThreadStart(RunTheradSerach));
+            t.IsBackground = true;
+            t.Start();
+        }
+        private void RunTheradSerach()
+        {
+            try
+            {
+                int count = 0;
+                Application.Current.Dispatcher.BeginInvoke((Action)(() => SearchObjectsView.Instance.status.Text = $"Устройств обработанно: {count}"));
+                IQueryable<Device> values = null;
+                if (Name.Length < 1 && GroupName.Length < 1)
+                    values = Model.client.QueryDevices(x => x.Group == SelectedGroup.Name);
+                else if (GroupName.Length > 1)
+                    values = Model.client.QueryDevices(x => x.Group == GroupName);
+                else
+                    values = Model.client.QueryDevices(x => x.Group == SelectedGroup.Name && x.Name.Contains(Name));
 
+                if (GroupName.Length < 1 && SelectedProbe == null && SelectedGroup == null)
+                {
+                    values = null;
+                }
+                if (values != null)
+                {
+                    foreach (var item in values)
+                    {
+                        if (IsOnlyDownChecked)
+                        {
+                            if (item.DownSensors > 0)
+                            {
+                                Application.Current.Dispatcher.BeginInvoke((Action)(() => Devices.Add(new DeviceViewModel(item))));
+                                Application.Current.Dispatcher.BeginInvoke((Action)(() => SearchObjectsView.Instance.status.Text = $"Устройств обработанно: {count}"));
+                                count++;
+                                Thread.Sleep(100);
+                            }
+                        }
+                        else
+                        {
+                            Application.Current.Dispatcher.BeginInvoke((Action)(() => Devices.Add(new DeviceViewModel(item))));
+                            Application.Current.Dispatcher.BeginInvoke((Action)(() => SearchObjectsView.Instance.status.Text = $"Устройств обработанно: {count}"));
+                            count++;
+                            Thread.Sleep(100);
+                        }
+                    }
+
+                    if (count > 0)
+                    {
+                        IsExportButtonEnabled = true;
+                    }
+                    else
+                    {
+                        IsExportButtonEnabled = false;
+                    }
+                    LoadingScreenVisibility = Visibility.Hidden;
+                }
+                else
+                {
+                    LoadingScreenVisibility = Visibility.Hidden;
+                    MessageBox.Show("Вы не указали критерии поиска!");
+                }
+            }
+            catch
+            {
+                LoadingScreenVisibility = Visibility.Hidden;
+                MessageBox.Show("Вы не указали критерии поиска!");
+            }
+        }
 
         public SearchObjectsViewModel()
         {
@@ -148,36 +231,7 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
             SearchCommand = new DelegateCommand<object>(i =>
             {
                 Devices.Clear();
-                IQueryable<Device> values;
-                if (Name.Length < 1 && GroupName.Length < 1)
-                    values = Model.client.QueryDevices(x => x.Group == SelectedGroup.Name);
-                else if (GroupName.Length > 1)
-                    values = Model.client.QueryDevices(x => x.Group == GroupName);
-                else
-                    values = Model.client.QueryDevices(x => x.Group == SelectedGroup.Name && x.Name.Contains(Name));
-                foreach (var item in values)
-                {
-                    if (IsOnlyDownChecked)
-                    {
-                        if (item.DownSensors > 0)
-                        {
-                            Devices.Add(new DeviceViewModel(item));
-                        }
-                    }
-                    else
-                    {
-                        Devices.Add(new DeviceViewModel(item));
-                    }
-                }
-
-                if (Devices.Count > 0)
-                {
-                    IsExportButtonEnabled = true;
-                }
-                else
-                {
-                    IsExportButtonEnabled = false;
-                }
+                Search();
             });
             ExportCommand = new DelegateCommand<object>(i =>
             {
@@ -221,7 +275,7 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
             //Thread t = new Thread(new ThreadStart(RunThreadExportSensors));
             //t.IsBackground = true;
             //t.Start();
-            Models.ExportQueue.QueueController.Add($"{SelectedGroup.Name}", Devices.ToList());
+            Models.ExportQueue.QueueController.Add($"тест", Devices.ToList());
         }
         private void RunThreadExportSensors()
         {
@@ -238,7 +292,7 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
                     foreach (var item in Sensors)
                     {
                         var channel = PRTGConnection.Client.GetChannels(item.Id).First();
-                        list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit, channel.LowerWarningLimit));
+                        list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit, channel.LowerWarningLimit, channel.LastValue.ToString()));
 
                     }
                 }

@@ -597,23 +597,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\motyr\\.nuget\\packages\\": {},
+    "C:\\Users\\Alex\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\motyr\\OneDrive\\Рабочий стол\\PRTGAuto\\PRTGAuto\\PRTGAuto.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\PRTGAuto\\PRTGAuto\\PRTGAuto.csproj",
       "projectName": "PRTGAuto",
-      "projectPath": "C:\\Users\\motyr\\OneDrive\\Рабочий стол\\PRTGAuto\\PRTGAuto\\PRTGAuto.csproj",
-      "packagesPath": "C:\\Users\\motyr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\motyr\\OneDrive\\Рабочий стол\\PRTGAuto\\PRTGAuto\\obj\\",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\PRTGAuto\\PRTGAuto\\PRTGAuto.csproj",
+      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alex\\source\\repos\\PRTGAuto\\PRTGAuto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\motyr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -680,7 +680,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

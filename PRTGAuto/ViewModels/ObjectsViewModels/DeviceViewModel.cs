@@ -43,7 +43,7 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
                 foreach (var item in Sensors)
                 {
                     var channel = PRTGConnection.Client.GetChannels(item.Id).First();
-                    list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit,channel.LowerWarningLimit));
+                    list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit,channel.LowerWarningLimit,channel.LastValue.ToString()));
                 }
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Filter = "Excel files(*.xlsx)|*.xlsx|All files(*.*)|*.*";
@@ -76,7 +76,8 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
             public string Status { get; set; }
             public double? LowerErrorLimit { get; set; }
             public double? LowerWarningLimit { get; set; }
-            public ExcelSensorData(string id, string name, string device, string group, string probe, string status,double? s, double? lowerWarningLimit)
+            public string? LastValue { get; set; }
+            public ExcelSensorData(string id, string name, string device, string group, string probe, string status,double? s, double? lowerWarningLimit, string? lastValue)
             {
                 Id = id;
                 Name = name;
@@ -86,6 +87,7 @@ namespace PRTGAuto.ViewModels.ObjectsViewModels
                 Status = status;
                 LowerErrorLimit = s;
                 LowerWarningLimit = lowerWarningLimit;
+                LastValue = lastValue;
             }
         }
     }

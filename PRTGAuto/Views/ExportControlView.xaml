@@ -6,20 +6,25 @@
              xmlns:local="clr-namespace:PRTGAuto.Views" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" Cursor="" 
              >
-    <Grid Width="550" Height="160" Background="White">
+    <Grid Width="550" Height="166" Background="White">
         <Grid Visibility="Hidden" x:Name="completed" Background="#B2000000" Panel.ZIndex="1">
             <TextBlock Text="Выполнено!" Foreground="White" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,47,0,0"></TextBlock>
             <Button Click="Button_Click_1"  Style="{StaticResource  MaterialDesignRaisedAccentButton}" Content="Удалить из очереди" Margin="103,85,103,43" Background="#FF00C4EA"></Button>
         </Grid>
         <Grid Margin="10">
+         
             <StackPanel Orientation="Vertical" VerticalAlignment="Top">
-                <TextBlock  x:Name="title" Text="Наименование" ToolTip="{Binding CurrentDevice.Name}" FontSize="25" FontWeight="DemiBold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center"  x:Name="title" Text="Наименование" ToolTip="{Binding CurrentDevice.Name}" FontSize="25" FontWeight="DemiBold"/>
+                    <Button  Style="{StaticResource MaterialDesignFlatLightButton}"  HorizontalAlignment="Right" Content="{materialDesign:PackIcon Kind=Settings, Size=25}" Foreground="Black" VerticalAlignment="Center" Click="Button_Click_2"></Button>
+                </StackPanel>
                 <TextBlock x:Name="status" VerticalAlignment="Top"   Text="Прогресс 0/10" ToolTip="{Binding  CurrentDevice.Name}" FontSize="14" FontWeight="DemiBold" ></TextBlock>
                 <StackPanel Margin="1" Orientation="Horizontal">
                     <Label x:Name="path" VerticalAlignment="Center" Content="E:\Учеба\Преподаватели\1 Семестр\МДК 11.01 Басалаев\Практическая работа №7"></Label>
-                    <Button Content="{materialDesign:PackIcon Kind=FileExchange}"/>
                 </StackPanel>
-                <Button x:Name="btn" Margin="10" Click="Button_Click" Style="{StaticResource  MaterialDesignRaisedAccentButton}"   Content="Запустить" ToolTip="Экспортировать данные сенсоров"></Button>
+              
+                <Button x:Name="btn" Margin="10" Width="500" Click="Button_Click" Style="{StaticResource  MaterialDesignRaisedAccentButton}"   Content="Запустить" ToolTip="Экспортировать данные сенсоров"></Button>
+                <Separator></Separator>
             </StackPanel>
         </Grid>
     </Grid>

@@ -13,6 +13,7 @@ using System.Windows;
 using Aspose.Cells;
 using PRTGAuto.ViewModels.ObjectsViewModels;
 using System.Windows.Controls;
+using PrtgAPI.Schedules;
 
 namespace PRTGAuto.Models.ExportQueue
 {
@@ -69,10 +70,16 @@ namespace PRTGAuto.Models.ExportQueue
             public bool IsFinished = false;
             public string progress = "";
             public string path = "";
+
+            public Dictionary<string, bool?> Settings = new Dictionary<string, bool?>();
+
             public Queue(string title, List<DeviceViewModel> devices)
             {
                 Title = "Экспорт из группы " + title;
                 Devices = devices;
+                string[] values = new string[] { "Id", "Name", "Device", "Group", "Probe", "Status", "LowerErrorLimit", "LowerWarningLimit", "LastValue" };
+                for (int i = 0; i < values.Length; i++)
+                    Settings.Add(values[i], true);
             }
             public Thread t;
             public void ExportSensors()
@@ -106,7 +113,8 @@ namespace PRTGAuto.Models.ExportQueue
                             Application.Current.Dispatcher.BeginInvoke((Action)(() => ProgressString.Text = text));
                             j++;
                             var channel = PRTGConnection.Client.GetChannels(item.Id).First();
-                            list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit, channel.LowerWarningLimit));
+                            var schedule = PRTGConnection.Client.GetSchedules().First();
+                            list.Add(new ExcelSensorData(item.Id.ToString(), item.Name, item.Device, item.Group, item.Probe, item.Status.ToString(), channel.LowerErrorLimit, channel.LowerWarningLimit, channel.VerticalAxisMax.ToString()));
                         }
                     }
                     catch
@@ -120,10 +128,22 @@ namespace PRTGAuto.Models.ExportQueue
                 //saveFileDialog.ShowDialog();
                 // Instantiate a new Workbook
                 Workbook book = new Workbook();
+                int count = 0;
+                foreach (var item in Settings)
+                    if (item.Value == true)
+                        count++;
+                string[] settings = new string[count];
+                int index = 0;
+                foreach (var item in Settings)
+                    if (item.Value == true)
+                    {
+                        settings[index] = item.Key;
+                        index++;
+                    }
                 // Obtaining the reference of the worksheet
                 Worksheet sheet = book.Worksheets[0];
                 sheet.Cells.ImportCustomObjects((System.Collections.ICollection)list,
-    new string[] { "Id", "Name", "Device", "Group", "Probe", "Status", "LowerErrorLimit", "LowerWarningLimit" }, // propertyNames
+    settings, // propertyNames
     true, // isPropertyNameShown
     0, // firstRow
     0, // firstColumn
